@@ -35,13 +35,13 @@ import static org.elasticsearch.index.query.QueryBuilders.*;
 public class OrdersResource {
 
     private final Logger log = LoggerFactory.getLogger(OrdersResource.class);
-        
+
     @Inject
     private OrdersRepository ordersRepository;
-    
+
     @Inject
     private OrdersSearchRepository ordersSearchRepository;
-    
+
     /**
      * POST  /orderss -> Create a new orders.
      */
@@ -90,7 +90,7 @@ public class OrdersResource {
     public ResponseEntity<List<Orders>> getAllOrderss(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of Orderss");
-        Page<Orders> page = ordersRepository.findAll(pageable); 
+        Page<Orders> page = ordersRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/orderss");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }

@@ -1,0 +1,25 @@
+{
+    "jhipstercrmdemoApp": {
+        "deliveryday" : {
+            "home": {
+                "title": "Deliverydays",
+                "createLabel": "Créer un nouveau Deliveryday",
+                "createOrEditLabel": "Créer ou éditer un Deliveryday",
+                "search": "Search for Deliveryday"
+            },
+            "created": "Un nouveau Deliveryday a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Deliveryday avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Deliveryday avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Deliveryday {{ id }} ?"
+            },
+            "detail": {
+                "title": "Deliveryday"
+            },
+            "weekday": "Weekday",
+            "name": "Name",
+            "orders": "Orders"
+        }
+    }
+}
+

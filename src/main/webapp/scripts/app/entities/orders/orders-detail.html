@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="jhipstercrmdemoApp.orders.detail.title">Orders</span> {{orders.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="jhipstercrmdemoApp.orders.details">Details</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{orders.details}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="jhipstercrmdemoApp.orders.date">Date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{orders.date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="jhipstercrmdemoApp.orders.customer">customer</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="customer.detail({id:orders.customer.id})">{{orders.customer.name}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="jhipstercrmdemoApp.orders.fruitpack">fruitpack</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="fruitpack.detail({id:orders.fruitpack.id})">{{orders.fruitpack.name}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="jhipstercrmdemoApp.orders.week">week</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="week.detail({id:orders.week.id})">{{orders.week.name}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="jhipstercrmdemoApp.orders.deliveryday">deliveryday</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="deliveryday.detail({id:orders.deliveryday.id})">{{orders.deliveryday.name}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

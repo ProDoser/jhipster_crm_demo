@@ -1,0 +1,26 @@
+{
+    "jhipstercrmdemoApp": {
+        "fruitpack" : {
+            "home": {
+                "title": "Fruitpacks",
+                "createLabel": "Créer un nouveau Fruitpack",
+                "createOrEditLabel": "Créer ou éditer un Fruitpack",
+                "search": "Search for Fruitpack"
+            },
+            "created": "Un nouveau Fruitpack a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Fruitpack avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Fruitpack avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Fruitpack {{ id }} ?"
+            },
+            "detail": {
+                "title": "Fruitpack"
+            },
+            "name": "Name",
+            "price": "Price",
+            "description": "Description",
+            "orders": "Orders"
+        }
+    }
+}
+
